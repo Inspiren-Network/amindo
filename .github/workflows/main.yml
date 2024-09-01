@@ -18,4 +18,4 @@ jobs:
           username: oks@9.inspiren.dev
           password: ${{ secrets.FTPPASSWORD }}
           protocol: ftps
-          server-dir: 'public_html/abc/'
+          server-dir: 'public_html/amindo/wp-content/themes/blocksy-child/'

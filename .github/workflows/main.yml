@@ -1,0 +1,18 @@
+name: 🚀 Deploy website on push
+on:
+  push:
+    branches:
+      - 'main'
+jobs:
+  web-deploy:
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📂 Sync files
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: 153.92.8.66
+          username: oks@9.inspiren.dev
+          password: ${{ secrets.FTPPASSWORD }}
+          local-dir: '.'
+          server-dir: 'abc/'

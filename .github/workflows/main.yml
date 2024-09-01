@@ -11,8 +11,8 @@ jobs:
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          server: 153.92.8.66
+          server: 137.59.110.150
           username: oks@9.inspiren.dev
           password: ${{ secrets.FTPPASSWORD }}
-          local-dir: '.'
+          local-dir: './'
           server-dir: 'abc/'

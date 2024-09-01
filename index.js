@@ -3,6 +3,8 @@ jQuery(document).ready(function ($) {
   animationStart()
   $(window).resize(responsiveScript)
 
+  // console.log(a test)
+
   $('#side-contact .float-btn-trigger').click(function () {
     $(this).toggleClass('toogle')
     $('a.floating-button').toggleClass('toogle')

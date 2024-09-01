@@ -14,5 +14,5 @@ jobs:
           server: 137.59.110.150
           username: oks@9.inspiren.dev
           password: ${{ secrets.FTPPASSWORD }}
-          local-dir: './'
+          local-dir: '/'
           server-dir: 'abc/'

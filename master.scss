@@ -787,6 +787,23 @@ img[data-dominant-color]:not(.has-transparency) {
   }
 }
 
+.flex {
+  display: flex !important;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.flex::before,
+.flex::after {
+  display: none;
+}
+
+@for $i from 1 through 12 {
+  .flex-column-#{$i} > div {
+    width: calc(100% / $i);
+  }
+}
+
 .grid {
   display: grid !important;
 }
@@ -1072,6 +1089,23 @@ img[data-dominant-color]:not(.has-transparency) {
     }
   }
 
+  .flex-md {
+    display: flex !important;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .flex-md::before,
+  .flex-md::after {
+    display: none;
+  }
+
+  @for $i from 1 through 12 {
+    .flex-column-md-#{$i} > div {
+      width: calc(100% / $i);
+    }
+  }
+
   .grid-md {
     display: grid !important;
   }
@@ -1329,6 +1363,23 @@ img[data-dominant-color]:not(.has-transparency) {
     }
   }
 
+  .flex-lg {
+    display: flex !important;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .flex-lg::before,
+  .flex-lg::after {
+    display: none;
+  }
+
+  @for $i from 1 through 12 {
+    .flex-column-lg-#{$i} > div {
+      width: calc(100% / $i);
+    }
+  }
+
   .grid-lg {
     display: grid !important;
   }
@@ -1571,6 +1622,23 @@ img[data-dominant-color]:not(.has-transparency) {
   @for $i from 0 through 200 {
     .-xl-mr-#{$i} {
       margin-right: -#{$i}px !important;
+    }
+  }
+
+  .flex-xl {
+    display: flex !important;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .flex-xl::before,
+  .flex-xl::after {
+    display: none;
+  }
+
+  @for $i from 1 through 12 {
+    .flex-column-xl-#{$i} > div {
+      width: calc(100% / $i);
     }
   }
 

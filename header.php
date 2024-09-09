@@ -54,8 +54,12 @@
 	?>
 
 	<?php
-		if(is_woocommerce()) {
-			echo do_shortcode('[rev_slider alias="What-We-Do"][/rev_slider]');
+		if ( has_term( 'cores-tubes', 'product_cat' ) ) {
+			echo do_shortcode('[rev_slider alias="Cores--Tubes"][/rev_slider]');
+		}
+
+		if ( has_term( 'Edgeboard', 'product_cat' ) ) {
+			echo do_shortcode('[rev_slider alias="Edgeboard"][/rev_slider]');
 		}
 	?>
 

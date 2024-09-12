@@ -217,8 +217,7 @@ $secondary-font-family: (
         left: 0;
         width: 70px;
         height: 70px;
-        background: center / cover no-repeat
-          url(https://9.inspiren.dev/amindo/wp-content/uploads/2024/09/mission-jpg.webp);
+        background: center / cover no-repeat url(./images/mission-jpg.webp);
         display: block !important;
         z-index: 1;
         transition: var(--all-transition);
@@ -253,8 +252,7 @@ $secondary-font-family: (
         left: 0;
         width: 70px;
         height: 70px;
-        background: center / cover no-repeat
-          url(https://9.inspiren.dev/amindo/wp-content/uploads/2024/09/vision-jpg.webp);
+        background: center / cover no-repeat url(./images/vision-jpg.webp);
         display: block !important;
         z-index: 1;
         transition: var(--all-transition);

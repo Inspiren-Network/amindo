@@ -254,31 +254,37 @@ h6 {
   vertical-align: top;
 }
 
-.contact-form .form {
+.contact-form .form,
+.work-form .form {
   margin-bottom: 20px;
   display: grid;
   gap: 20px;
 }
 
-.contact-form textarea {
+.contact-form textarea,
+.work-form textarea {
   height: 90px;
 }
 
-.contact-form #send [type='submit'] {
+.contact-form #send [type='submit'],
+.work-form #send [type='submit'] {
   float: none;
   display: inline-block;
 }
 
-.wpcf7-form .contact-form #send .custom-button {
+.wpcf7-form .contact-form #send .custom-button,
+.wpcf7-form .work-form #send .custom-button {
   position: relative;
 }
 
-.wpcf7-form .contact-form #send .custom-button > i {
+.wpcf7-form .contact-form #send .custom-button > i,
+.wpcf7-form .work-form #send .custom-button > i {
   position: absolute;
   top: 30%;
 }
 
-.wpcf7-form:not(.submitting) .contact-form #send .custom-button > i {
+.wpcf7-form:not(.submitting) .contact-form #send .custom-button > i,
+.wpcf7-form:not(.submitting) .work-form #send .custom-button > i {
   display: none;
 }
 

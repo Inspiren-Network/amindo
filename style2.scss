@@ -362,7 +362,8 @@ $secondary-font-family: (
   }
 }
 
-.contact-form #send [type='submit'] {
+.contact-form #send [type='submit'],
+.work-form #send [type='submit'] {
   background-color: #fd0000;
   padding: 12px 25px;
   line-height: 1;
@@ -371,6 +372,24 @@ $secondary-font-family: (
   &:not(:hover) {
     border-top-left-radius: 32px;
     border-bottom-right-radius: 32px;
+  }
+}
+
+.work-form {
+  #send {
+    text-align: center;
+  }
+
+  .wpcf7-spinner {
+    position: absolute;
+  }
+
+  #resume {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
@@ -567,6 +586,10 @@ footer {
   }
 }
 
+#popmake-368 {
+  background-color: var(--theme-palette-color-1);
+}
+
 body.page-id-184 {
   footer {
     [data-row='middle'] {
@@ -597,6 +620,14 @@ body.page-id-184 {
   }
 
   .contact-form .form #country ~ * {
+    grid-column: 1 / -1;
+  }
+
+  .work-form .form {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .work-form .form #resume ~ * {
     grid-column: 1 / -1;
   }
 }
